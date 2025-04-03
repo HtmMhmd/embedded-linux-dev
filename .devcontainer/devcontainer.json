@@ -1,0 +1,20 @@
+{
+    "name": "Yocto Dunfell Development",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+    "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+    },
+    "extensions": [
+        "ms-vscode.cpptools",
+        "ms-python.python",
+        "ms-vscode.cmake-tools"
+    ],
+    "remoteUser": "yoctouser",
+    "features": {
+        "git": "latest"
+    },
+    "postCreateCommand": "bash /workspaces/codespaces-blank/setup-yocto-env.sh"
+}
